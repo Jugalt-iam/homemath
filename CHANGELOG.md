@@ -26,5 +26,5 @@ Initial release.
 - Response caching in memory, or in Redis when `REDIS_URL` is set.
 - `py.typed` marker: type annotations are exported to consumers.
 
-[Unreleased]: https://github.com/ambcreativeteam/homemath/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/ambcreativeteam/homemath/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Jugalt-iam/homemath/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Jugalt-iam/homemath/releases/tag/v0.1.0

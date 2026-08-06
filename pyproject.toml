@@ -50,10 +50,10 @@ redis = ["redis>=5,<7"]
 test = ["pytest>=8,<9"]
 
 [project.urls]
-Homepage = "https://github.com/ambcreativeteam/homemath"
-Repository = "https://github.com/ambcreativeteam/homemath"
-Issues = "https://github.com/ambcreativeteam/homemath/issues"
-Changelog = "https://github.com/ambcreativeteam/homemath/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Jugalt-iam/homemath"
+Repository = "https://github.com/Jugalt-iam/homemath"
+Issues = "https://github.com/Jugalt-iam/homemath/issues"
+Changelog = "https://github.com/Jugalt-iam/homemath/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["src"]

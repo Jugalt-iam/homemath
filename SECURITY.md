@@ -7,7 +7,7 @@ This project is pre-1.0. Only the latest release receives fixes.
 ## Reporting a vulnerability
 
 Please report privately rather than opening a public issue: use
-[GitHub's private vulnerability reporting](https://github.com/ambcreativeteam/homemath/security/advisories/new)
+[GitHub's private vulnerability reporting](https://github.com/Jugalt-iam/homemath/security/advisories/new)
 on this repository.
 
 Expect an acknowledgement within a week. If the report is valid, a fix and an

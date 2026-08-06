@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "homemath"
-version = "0.1.0"
+version = "0.1.1"
 description = "Inference layer for OpenAI-compatible chat endpoints: streaming, channel separation, task classification, token budgeting."
 readme = "README.md"
 license = { text = "MIT" }

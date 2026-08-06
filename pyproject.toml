@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homemath"
+version = "0.1.0"
+description = "Inference layer for OpenAI-compatible chat endpoints: streaming, channel separation, task classification, token budgeting."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Jugal Nitin Thakkar" },
+]
+maintainers = [
+    { name = "Jugal Nitin Thakkar" },
+]
+requires-python = ">=3.9"
+keywords = [
+    "llm",
+    "inference",
+    "openai-compatible",
+    "streaming",
+    "ollama",
+    "reasoning",
+    "vllm",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+# Ranges, not pins. This is a library: an exact pin here forces a resolver
+# conflict on any project that also depends on requests.
+dependencies = [
+    "requests>=2.31,<3",
+]
+
+[project.optional-dependencies]
+redis = ["redis>=5,<7"]
+test = ["pytest>=8,<9"]
+
+[project.urls]
+Homepage = "https://github.com/ambcreativeteam/homemath"
+Repository = "https://github.com/ambcreativeteam/homemath"
+Issues = "https://github.com/ambcreativeteam/homemath/issues"
+Changelog = "https://github.com/ambcreativeteam/homemath/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+homemath = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

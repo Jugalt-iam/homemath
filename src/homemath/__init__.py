@@ -22,6 +22,12 @@ import logging
 import requests
 import threading
 from typing import Optional, List, Tuple, Dict, Any
+from importlib.metadata import version as _pkg_version, PackageNotFoundError
+
+try:
+    __version__ = _pkg_version("homemath")
+except PackageNotFoundError:
+    __version__ = "0.0.0.dev0"
 
 logger = logging.getLogger("homemath")
 
@@ -1279,6 +1285,7 @@ def homemath_chat(messages: list, temperature: float = 0.7, use_cache: bool = Tr
 # Names that make up the supported surface. Without this, ``import *`` would
 # also export os, re, requests, threading and the typing aliases.
 __all__ = [
+    "__version__",
     # High-level entry points
     "homemath_chat",
     "get_engine",

@@ -6,7 +6,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [0.1.0] - first public release
+## [0.1.1]
+
+Added `__version__` to the package.
 
 Initial release.
 

@@ -46,7 +46,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-redis = ["redis>=5,<7"]
+redis = ["redis>=5,<9"]
 test = ["pytest>=8,<9"]
 
 [project.urls]
